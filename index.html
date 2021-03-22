@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS4 Boiler Plate</title>
+     
+    <!-- Bootstrap 4 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">1
+    <!-- - FontAwesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+     <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div class="container" style="background-color: rgb(250, 248, 248);">
+            <h2 class="text-muted float-left">Your cart</h2>
+            <h2 class="text-white float-right bg-secondary px-3 py-1" style="border-radius: 30px;">3</h2>
+            <div class="clearfix"></div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="float-left">Product name</h4>
+                    <h4 class="float-right text-muted">$12</h4>
+                    <div class="clearfix"></div>
+                    <h6 class="text-muted">Brief description</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="float-left">Secondary Product</h4>
+                    <h4 class="float-right text-muted">$8</h4>
+                    <div class="clearfix"></div>
+                    <h6 class="text-muted">Brief description</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="float-left">Third item</h4>
+                    <h4 class="float-right text-muted">$5</h4>
+                    <div class="clearfix"></div>
+                    <h6 class="text-muted">Brief description</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body" style="background-color: rgb(250, 248, 248);">
+                    <h4 class="float-left text-success">Promo code</h4>
+                    <h4 class="float-right text-success">-$5</h4>
+                    <div class="clearfix"></div>
+                    <h6 class="text-success">EXAMPLECODE</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="float-left">Total(USD)</h4>
+                    <h4 class="float-right">$20</h4>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="input-group py-2 px-2">
+                    <input type="text" placeholder="Promo code" class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-secondary px-2 text-white py-2" style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;">Redeem</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>Billing address</h3>
+            <form>
+                <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputFirstname">First name</label>
+                    <input type="text" class="form-control">
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-12">
+                        <label for="inputFirstname">Last name</label>
+                        <input type="text" class="form-control">
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-textsss px-3 text-white py-2" style="background-color: rgb(175, 172, 172); border-top-left-radius: 5px; border-bottom-left-radius: 5px;">@</span>
+                        </div>
+                        <input type="text" placeholder="Username" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><strong>Email</strong> (Optional)</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1"><strong>Address2</strong> (Optional)</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apartment or suite">
+                </div>
+                <div class="form-group col-md-12">
+                <label for="inputCountry">Country</label>
+                    <select id="inputCountry" class="form-control" id="inputCountry">
+                        <option selected>Choose...</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>France</option>
+                        <option>Britain</option>
+                        <option>Italy</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputCity">State</label>
+                        <select id="inputCity" class="form-control" id="inputCity">
+                            <option selected>Choose...</option>
+                            <option>Telangana</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>
+                            <option>Karnataka</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="inputFirstnameZip">Zip</label>
+                            <input type="text" class="form-control">
+                    </div>
+                    </div>
+                    <div class="card p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label1 " for="defaultCheck1">Shipping address is the same as my billing address</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label2" for="defaultCheck2">Save this information for next time</label>
+                    </div>
+                    </div>
+                    <br>
+                    <h4>Payment</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Option1">
+                        <label class="form-check-label" for="examRadios1">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Option1">
+                        <label class="form-check-label" for="examRadios2">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Option1">
+                        <label class="form-check-label" for="examRadios3">Paypal</label>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="inputName">Name on card</label>
+                            <input type="text" class="form-control">
+                            <h6 class="text-muted" style="font-size: 14px;">Full name as displayed on card</h6>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="inputNumber">Credit card number</label>
+                            <input type="text" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="inputExpiration">Expiration</label>
+                            <input type="text" class="form-control">
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                            <label for="inputCvv">CVV</label>
+                            <input type="text" class="form-control">
+                    </div>
+                    </div>
+                    <div class="border my-4" style="border: 2px grey;"></div>
+                        <h5 class="text-center text-white bg-primary p-3" style="border-radius: 5px;">Continue to checkout</h5>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="text-center"
+                     <h6 class="d-inline-block">&copy;</h6>
+                    <h6 class="d-inline-block">2017-2018 Company Name</h6> 
+                </div>
+            </form> 
+            <footer class="text-center text-primary">
+                <h6 class="mx-2 d-inline">Privacy</h6>
+                <h6 class="mx-2 d-inline">Terms</h6>
+                <h6 class="mx-2 d-inline">Support</h6>
+            </footer>   
+    </div>
+ 
+
+
+
+
+    <!-- Bootstrap 4 Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- Custom Script -->
+<script src="/js/script.js"></script>
+</body>
+</html>
